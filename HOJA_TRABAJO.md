@@ -1,6 +1,6 @@
 # Laboratorio 1 — Hoja de trabajo: del catálogo estático al catálogo generado con PHP
 
-Nombre: ______________________   Fecha: 05/10/2026
+Nombre: Rodrigo Ledezma Sanchez   Fecha: 05/10/2026
 
 ## Parte A — Tu plataforma PHP
 

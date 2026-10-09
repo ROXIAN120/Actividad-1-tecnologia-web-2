@@ -1,26 +1,26 @@
 # Bitácora de uso de inteligencia artificial
 
-## Actividad 1 — Revisión de la consigna
+## Consulta 1 — Comprender la actividad
 
-- **Qué pedí:** analizar los documentos de la clase, el laboratorio, la guía de instalación y los archivos iniciales para determinar la tarea.
-- **Qué acepté:** la identificación de los seis TODO de `public/index.php`, los cuatro entregables y la meta de 12 de 12 comprobaciones.
-- **Qué corregí o verifiqué:** confirmé directamente que PHP 8.5.8 está instalado y detecté que faltaba `Verificador.php` en el paquete recibido.
-- **Por qué:** necesitaba distinguir los requisitos de entrega de las explicaciones teóricas y comprobar si el laboratorio podía ejecutarse.
+- **Qué pedí:** una explicación general de la consigna y de los seis puntos que debía completar en `index.php`.
+- **Qué me resultó útil:** identificar que el catálogo debía cargar los datos con `require`, recorrerlos con `foreach` y mostrar seis productos sin exponer el código PHP.
+- **Qué revisé:** comparé la explicación con la guía y ejecuté la versión inicial para conocer su estado.
+- **Por qué lo usé:** quería ordenar los pasos antes de comenzar y entender qué comprobaba el verificador.
 
-## Actividad 2 — Desarrollo y comprobación
+## Consulta 2 — Formato y seguridad
 
-- **Qué pedí:** preparar una copia resuelta del laboratorio dentro de una carpeta independiente llamada `tarea`.
-- **Qué acepté:** usar `require` para cargar los datos, `htmlspecialchars` para escapar las salidas, `number_format` para los precios, un recorrido para contar disponibles y una condición para marcar el producto agotado.
-- **Qué corregí o verifiqué:** se añadió localmente la dependencia faltante del verificador, se comprobó la sintaxis de PHP y se ejecutaron las 12 pruebas automáticas.
-- **Por qué:** estas decisiones corresponden a los conceptos de la clase y permiten demostrar que el resultado se genera en el servidor, presenta los datos correctamente y evita que un dato se interprete como HTML o JavaScript.
+- **Qué pedí:** una explicación de `number_format`, `htmlspecialchars` y del riesgo de XSS.
+- **Qué me resultó útil:** usar `number_format` para mostrar precios como `Bs 1.234,50` y escapar cada texto antes de enviarlo al navegador.
+- **Qué corregí:** mantuve `e()` en el nombre de la cera para que `<b>pura</b>` se muestre como texto y no como una etiqueta HTML.
+- **Por qué lo acepté:** la prueba demuestra que un dato externo nunca debe interpretarse como código.
 
-## Actividad 3 — Evidencias y reflexión
+## Consulta 3 — Comprobación del resultado
 
-- **Qué pedí:** generar evidencia del catálogo y del resultado del verificador, y redactar respuestas comprensibles para la hoja de trabajo.
-- **Qué acepté:** las evidencias se obtuvieron ejecutando la solución real; las respuestas explican la diferencia entre cliente y servidor, el riesgo de XSS y la razón de mantener `datos.php` fuera de `public/`.
-- **Qué corregí o verifiqué:** revisé que la captura muestre los seis productos, cinco disponibles, el producto agotado, los precios bolivianos y el texto `<b>` escapado.
-- **Por qué:** la entrega requiere demostrar funcionamiento y poder explicar cada decisión, no solamente presentar código.
+- **Qué pedí:** ayuda para interpretar los mensajes del verificador y revisar los casos que faltaban.
+- **Qué comprobé:** seis productos, cinco disponibles, precios bolivianos, producto agotado, fecha del servidor, hoja de estilos y datos fuera de `public/`.
+- **Resultado:** `php verificar.php` terminó con 12 de 12 comprobaciones.
+- **Qué aprendí:** PHP construye el HTML en el servidor y el navegador recibe solamente el resultado.
 
-## Declaración
+## Reflexión personal
 
-La inteligencia artificial se utilizó para analizar la consigna, proponer y preparar la implementación, recuperar la herramienta de verificación faltante, redactar explicaciones y generar evidencias. Antes de presentar el trabajo, debo revisar el código y asegurarme de poder explicar cada línea y cada decisión con mis propias palabras.
+Usé la inteligencia artificial como apoyo para entender funciones y revisar casos de prueba. No tomé el resultado del verificador como explicación suficiente: también revisé para qué sirve cada función y cómo protege la salida. Antes de presentar el laboratorio debo poder explicar cada línea y justificar por qué los datos permanecen fuera de la carpeta pública.
