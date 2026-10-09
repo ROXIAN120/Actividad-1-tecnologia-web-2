@@ -1,0 +1,13 @@
+<?php
+// datos.php — Productos de la Asociación de Apicultores Flor de la Chiquitanía (por ahora en un arreglo;
+// en la clase 4 irán a un archivo JSON y en la clase 8 a MySQL).
+declare(strict_types=1);
+
+return [
+    ['codigo' => 'MIE-500', 'nombre' => 'Miel multifloral 500 g',        'categoria' => 'Miel',     'precio' => 45.0,  'stock' => 32, 'socio' => 'Rosa Chuvé'],
+    ['codigo' => 'MIE-1K',  'nombre' => 'Miel multifloral 1 kg',         'categoria' => 'Miel',     'precio' => 85.0,  'stock' => 18, 'socio' => 'Rosa Chuvé'],
+    ['codigo' => 'MIE-CUS', 'nombre' => 'Miel de cusi 350 g',            'categoria' => 'Miel',     'precio' => 55.5,  'stock' => 0,  'socio' => 'Mario Surubí'],
+    ['codigo' => 'POL-250', 'nombre' => 'Polen & propóleo (pack 250 g)', 'categoria' => 'Derivados','precio' => 70.0,  'stock' => 9,  'socio' => 'Elena Masabí'],
+    ['codigo' => 'PRO-30',  'nombre' => 'Propóleo en gotas 30 ml',       'categoria' => 'Derivados','precio' => 38.0,  'stock' => 25, 'socio' => 'Elena Masabí'],
+    ['codigo' => 'CER-1K',  'nombre' => 'Cera <b>pura</b> 1 kg',         'categoria' => 'Cera',     'precio' => 120.0, 'stock' => 4,  'socio' => 'Mario Surubí'],
+];
