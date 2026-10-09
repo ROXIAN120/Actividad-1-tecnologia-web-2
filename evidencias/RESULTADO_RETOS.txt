@@ -1,0 +1,4 @@
+✅ Descuento de socio del 15 % con argumento nombrado
+✅ Stock agrupado por socio
+✅ Cálculo equivalente en centavos enteros
+Resultado de retos: 3 de 3
