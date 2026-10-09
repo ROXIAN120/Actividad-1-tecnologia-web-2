@@ -1,6 +1,6 @@
 # Laboratorio 2 — Hoja de trabajo: el lenguaje PHP al servicio del inventario
 
-Nombre: ______________________   Fecha: 09/10/2026
+Nombre: Rodrigo Ledezma Sanchez   Fecha: 09/10/2026
 
 ## Parte A — Trampas del lenguaje
 

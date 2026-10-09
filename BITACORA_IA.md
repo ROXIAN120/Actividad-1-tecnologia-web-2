@@ -1,33 +1,31 @@
 # Bitácora de uso de inteligencia artificial
 
-## Actividad 1 — Análisis de la guía
+## Consulta 1 — Tipos y comparaciones
 
-- **Qué pedí:** analizar la guía completa, la presentación y el paquete inicial del Laboratorio 2 para identificar las funciones, pruebas, preguntas y retos.
-- **Qué acepté:** la separación entre seis funciones obligatorias, tres funciones de ejemplo, doce comprobaciones oficiales y tres retos para el nivel Estratégico.
-- **Qué verifiqué:** ejecuté la versión inicial y confirmé que obtenía 4 de 12, tal como indica la guía.
-- **Por qué:** necesitaba comprobar que el material recibido coincidía con la consigna antes de desarrollar.
+- **Qué pedí:** una explicación de los resultados de `0.1 + 0.2`, las diferencias entre `==` y `===`, y el uso de funciones `mb_*`.
+- **Qué me resultó útil:** entender que los decimales binarios pueden tener pequeñas diferencias y que `===` evita conversiones automáticas inesperadas.
+- **Qué verifiqué:** ejecuté `pruebas.php` con PHP 8.5.8 y comparé la salida con la guía.
+- **Por qué lo usé:** necesitaba explicar los resultados con mis propias palabras, no limitarme a copiarlos.
 
-## Actividad 2 — Funciones obligatorias
+## Consulta 2 — Reglas del inventario
 
-- **Qué pedí:** completar y explicar las funciones de descuentos, clasificación de stock, filtrado, valor del inventario, creación de slugs y validación de códigos.
-- **Qué acepté:** `match (true)` para reglas por rangos, funciones de arreglos para filtrar y sumar, funciones multibyte para texto UTF-8 y una expresión regular con anclas para los códigos.
-- **Qué corregí o verifiqué:** se probaron mayúsculas y minúsculas, índices reordenados, límites de stock, cantidades 5/6/12, tildes, ñ, símbolos y códigos inválidos.
-- **Por qué:** cada implementación sigue la técnica solicitada expresamente por la guía y cubre sus casos límite.
+- **Qué pedí:** orientación sobre casos límite para descuentos, niveles de stock, filtros y validación de códigos.
+- **Qué me resultó útil:** revisar los límites 5, 6, 12, 0, 20 y 21; probar categorías con distintas mayúsculas; y comprobar códigos válidos e inválidos.
+- **Qué corregí:** confirmé que el filtro reindexa el arreglo, que `match` compara estrictamente y que la expresión regular usa anclas al inicio y al final.
+- **Por qué lo acepté:** esos casos coinciden con las pruebas exigidas por el laboratorio.
 
-## Actividad 3 — Hoja de trabajo y tipos
+## Consulta 3 — Cadenas y seguridad
 
-- **Qué pedí:** ejecutar las trampas del lenguaje y explicar sus resultados en PHP 8.5.8.
-- **Qué acepté:** explicar la representación binaria de decimales, la diferencia entre `==` y `===`, el procesamiento multibyte, `switch` frente a `match` y el efecto de `strict_types` en el archivo que llama a la función.
-- **Qué verifiqué:** `pruebas.php` demuestra el `TypeError` con tipos estrictos y `pruebas_sin_strict.php` demuestra la conversión de `'5'` al entero `5`.
-- **Por qué:** la rúbrica evalúa tanto la ejecución como la explicación del comportamiento.
+- **Qué pedí:** casos de prueba para convertir nombres con tildes, ñ y símbolos en enlaces limpios.
+- **Qué comprobé:** `Miel de cusí 350 g` se convierte en `miel-de-cusi-350-g` y el filtro recibido por URL se muestra escapado.
+- **Qué aprendí:** las funciones multibyte son necesarias para texto UTF-8 y los datos de la URL deben escaparse al mostrarse.
 
-## Actividad 4 — Retos y evidencias
+## Consulta 4 — Verificación y retos
 
-- **Qué pedí:** resolver también los tres retos sin romper las doce pruebas oficiales.
-- **Qué acepté:** argumento nombrado `esSocio`, agrupación de stock por socio y cálculo interno en centavos enteros.
-- **Qué corregí o verifiqué:** `php verificar.php` alcanza 12 de 12 y `php verificar_retos.php` alcanza 3 de 3; el reporte fue probado sin filtro, con categoría, con orden descendente y con una entrada HTML potencialmente peligrosa.
-- **Por qué:** los retos son necesarios para aspirar al nivel Estratégico y deben coexistir con los requisitos obligatorios.
+- **Qué pedí:** comparar el cálculo con decimales y con centavos enteros, y revisar los retos de descuento para socios y stock agrupado.
+- **Qué comprobé:** el verificador oficial terminó con 12 de 12; además, el descuento de socio, el stock por socio y el cálculo en centavos produjeron los resultados esperados.
+- **Por qué lo incorporé:** trabajar con centavos evita errores de redondeo y los retos permiten aplicar las funciones en un caso más cercano al inventario real.
 
-## Declaración
+## Reflexión personal
 
-La inteligencia artificial se utilizó para analizar la consigna, preparar la implementación, explicar los resultados, proponer casos límite y generar evidencias. Antes de presentar el trabajo debo revisar cada función y asegurarme de poder explicar por qué produce su resultado.
+La inteligencia artificial se utilizó como apoyo para aclarar conceptos y proponer casos de prueba. La parte más importante fue ejecutar cada ejemplo en PHP 8.5.8 y revisar los límites, porque una explicación puede parecer correcta y aun así fallar en un caso concreto. Antes de presentar debo poder explicar las seis funciones, la expresión regular y el efecto de `strict_types`.
