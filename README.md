@@ -1,6 +1,6 @@
 # Actividad 01 — Tecnología Web II
 
-**Grupo:** HTML  
+**Grupo:** HTML<br>
 **Integrante:** Rodrigo Ledezma Sanchez
 
 Repositorio: <https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2>
