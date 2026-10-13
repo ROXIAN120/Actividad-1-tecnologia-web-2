@@ -5,6 +5,24 @@
 
 Repositorio: <https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2>
 
+## Aplicación final integrada
+
+La rama `main` contiene la aplicación final con las clases `Producto`, `Categoria` y `Catalogo`, formularios validados, fotografías seguras y persistencia JSON.
+
+```powershell
+php verificar.php
+php verificar_poo.php
+php -S 127.0.0.1:8004 -t public
+```
+
+Abrir <http://127.0.0.1:8004>. Las pruebas funcionales obtienen 13/13 y las pruebas adicionales de POO obtienen 10/10. El verificador restaura los datos y las fotos de prueba.
+
+- [Informe PDF](informes/Informe_Actividad_01.pdf)
+- [Bitácora de IA](BITACORA_IA.md)
+- [Guion del video de 60 segundos](GUION_VIDEO_60_SEGUNDOS.md)
+
+Pendiente de entrega: grabar el video y adjuntar su archivo o enlace en la plataforma del curso.
+
 ## Laboratorios
 
 - [`laboratorio-1`](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-1): catálogo dinámico con PHP.
