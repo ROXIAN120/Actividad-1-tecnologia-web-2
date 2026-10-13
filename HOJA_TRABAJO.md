@@ -24,7 +24,7 @@ Servidor: `php -S 127.0.0.1:8000 -t public` · Verificador: `php verificar.php` 
 
 ## Parte D — Editar y eliminar
 
-1. Antes del control, una petición GET podía llegar a ejecutar la eliminación. Después, GET responde **405 Method Not Allowed**, incluye `Allow: POST` y el producto permanece intacto.
+1. Antes del control, GET no eliminaba el producto porque el código se obtenía desde `$_POST`, pero terminaba incorrectamente en una redirección 303. Después del control, GET responde **405 Method Not Allowed**, incluye `Allow: POST` y el producto permanece intacto.
 2. Antes de borrar la foto reemplazada, el archivo anterior quedaba huérfano en `datos/fotos`. Ahora una foto nueva se guarda y la anterior se elimina.
 3. Si otro campo falla, la foto nueva se borra inmediatamente. Esto evita archivos huérfanos asociados a productos que nunca fueron guardados.
 
