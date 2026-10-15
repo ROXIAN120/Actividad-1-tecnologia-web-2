@@ -12,7 +12,7 @@ El asistente implementó los códigos HTTP, registro de métodos permitidos, esc
 
 ## Qué se revisó
 
-Se contrastó la implementación con los verificadores y el inicio del docente. Las hojas distinguen los comportamientos iniciales descritos por el código de las comprobaciones realizadas sobre la solución. 
+Se contrastó la implementación con los verificadores y el inicio del docente. Las hojas distinguen los comportamientos iniciales descritos por el código de las comprobaciones realizadas sobre la solución.
 
 ## Comprobación
 
