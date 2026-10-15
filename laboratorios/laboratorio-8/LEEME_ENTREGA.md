@@ -21,7 +21,7 @@ El archivo `docker-compose.original.yml` conserva la configuración alternativa 
 
 Entregar proyecto sin `vendor/`, hoja y bitácora, captura del verificador 15/15 y capturas de búsquedas antes/después. La versión final ya está corregida; para evidencia del estado vulnerable utilizar el inicio del ZIP solo en el laboratorio local. Los retos opcionales de auditoría, permisos mínimos y listado de socios no están implementados.
 
-Evidencias recibidas: `evidencias/CAPTURA_MYSQL_HEALTHY.png`, `evidencias/CAPTURA_VERIFICADOR.png` (15/15), `evidencias/CAPTURA_CATALOGO.png` (6 productos), las seis capturas antes/después detalladas abajo y `evidencias/CAPTURA_BUSQUEDA_SIN_RESULTADOS.png` (texto qww2w, 0 productos). La captura de un intento con dos comandos concatenados no se incluye como evidencia de ejecución correcta.
+Evidencias recibidas: `evidencias/CAPTURA_MYSQL_HEALTHY.png`, `evidencias/CAPTURA_VERIFICADOR.png` (15/15), `evidencias/CAPTURA_CATALOGO.png` (6 productos), las diez capturas antes/después detalladas abajo y `evidencias/CAPTURA_BUSQUEDA_SIN_RESULTADOS.png` (texto qww2w, 0 productos). La captura de un intento con dos comandos concatenados no se incluye como evidencia de ejecución correcta.
 
 Comparación antes/después con capturas reales del usuario:
 
