@@ -1,0 +1,16 @@
+[OK] Jerarquía: NoEncontrado, Conflicto y DatosInvalidos heredan de ErrorAplicacion (RuntimeException)
+[OK] Cada excepción sabe su código HTTP: 404, 405, 409, 422
+[OK] Router: parámetros {codigo}, 404 si no existe y 405 (con métodos permitidos) si cambia el método
+[OK] Plantilla escapa automáticamente (también en arreglos) y respeta Crudo
+[OK] Plantilla rechaza objetos (la vista recibe datos, no modelos) y nombres con ../
+[OK] Front controller: / y /producto/MIE-1K (200); el CSS se sirve como archivo
+[OK] 404 con página propia para un producto o una ruta inexistente
+[OK] POST a / → 405 con cabecera Allow: GET
+[OK] Escape automático en la página: la búsqueda <script> se muestra como texto
+[OK] /api/articulos devuelve JSON (8 artículos)
+[OK] Cotización válida: 12 MIE-500 + 1 SRV-EXT → 200, total Bs 636,00
+[OK] Cantidades inválidas → 422, error por campo y lo escrito vuelve escapado
+[OK] Pedir 5 CER-1K (hay 4) → 409 con el mensaje de stock
+[OK] Error inesperado → 500 amable con referencia, SIN clase, ruta ni traza
+[OK] El detalle quedó en datos/errores.log con la misma referencia
+Resultado: 15 de 15 comprobaciones

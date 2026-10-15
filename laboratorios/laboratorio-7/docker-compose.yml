@@ -1,0 +1,11 @@
+name: tw2-tarea-7
+services:
+  php:
+    build:
+      context: .
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "127.0.0.1:8007:8000"
+    command: ["php", "-S", "0.0.0.0:8000", "-t", "public", "public/index.php"]

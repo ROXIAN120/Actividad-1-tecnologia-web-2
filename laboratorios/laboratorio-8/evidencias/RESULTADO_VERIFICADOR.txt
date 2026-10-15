@@ -1,0 +1,16 @@
+[OK] Conexión a MySQL 8.4 con utf8mb4 y consultas preparadas reales
+[OK] La BD protege sus reglas: CHECK precio > 0 (3819) y FOREIGN KEY de socio (1452)
+[OK] Código duplicado directo en la BD → Conflicto (traduce el error 1062)
+[OK] escaparComodines: % y _ se buscan literalmente
+[OK] Lista: 6 productos con el socio (JOIN) y "Polen &amp; propóleo" escapado
+[OK] Búsqueda "miel" → 3 productos (LIKE sin distinguir mayúsculas)
+[OK] Inyección SQL: zzz' OR 1=1 -- - → 0 productos (el texto es un DATO, no SQL)
+[OK] Una comilla suelta (') no rompe la consulta y % no devuelve todo
+[OK] Registrar → 303 y en MySQL queda POL-100 con precio DECIMAL 32.50 y socio 3
+[OK] Datos inválidos → 422: código repetido, precio y socio inexistente (sin tocar la BD)
+[OK] Editar → 303; MySQL guarda precio 35.00 y stock 12 (el código no cambia)
+[OK] Editar un producto inexistente → 404
+[OK] Eliminar por POST → 303 y la fila desaparece; repetir → 404
+[OK] Eliminar por GET → 405
+[OK] MySQL no disponible → 500 amable, sin usuario, clave ni servidor
+Resultado: 15 de 15 comprobaciones
