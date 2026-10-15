@@ -1,0 +1,15 @@
+[OK] Pagina: 36 resultados de 10 en 10 → 4 páginas; rango "Mostrando 11–20 de 36"
+[OK] Repositorio MySQL devuelve OBJETOS Producto con su Socio
+[OK] buscar(): página 4 trae los 6 últimos y el total es 36 (LIMIT/OFFSET)
+[OK] Filtro por categoría: Cera → 10 productos; Cera + "vela" → 2
+[OK] Orden por precio: el más barato es CAR-MIE (Bs 12) y el más caro CER-BLO (Bs 540)
+[OK] deSocio(4) → los 6 productos de Julián Pesoa
+[OK] Interfaz: el repositorio en MEMORIA responde igual que el de MySQL
+[OK] Página 1: 10 filas, "Mostrando 1–10 de 36", enlace Siguiente y sin Anterior
+[OK] Los enlaces de paginación conservan los filtros (categoría y orden)
+[OK] orden desconocido → orden por nombre (lista permitida); pagina=-5 → página 1
+[OK] pagina=abc → 1 · pagina=99 → la última (4)
+[OK] Socio 3 (Elena Masabí): sus 4 productos y el valor en stock
+[OK] CRUD con el repositorio: registrar → 303 y aparece en el socio 4 (7 productos)
+[OK] Editar y eliminar siguen funcionando (303)
+Resultado: 14 de 14 comprobaciones
