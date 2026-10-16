@@ -1,0 +1,100 @@
+{
+    "fecha": "2026-10-16T19:07:20-04:00",
+    "mysql": "8.4.11",
+    "repeticiones": 31,
+    "nota": "Datos educativos: 36 filas. Medianas locales, no benchmark de carga. IGNORE INDEX compara planes sin cambiar el esquema.",
+    "consultas": {
+        "socio_sin_indice": {
+            "sql": "SELECT id,nombre FROM productos IGNORE INDEX (idx_producto_socio_nombre) WHERE socio_id=3 ORDER BY nombre,id LIMIT 10",
+            "explain": [
+                {
+                    "id": 1,
+                    "select_type": "SIMPLE",
+                    "table": "productos",
+                    "partitions": null,
+                    "type": "index",
+                    "possible_keys": null,
+                    "key": "idx_producto_nombre",
+                    "key_len": "326",
+                    "ref": null,
+                    "rows": 10,
+                    "filtered": 10,
+                    "Extra": "Using where"
+                }
+            ],
+            "analyze": [
+                "-> Limit: 10 row(s)  (cost=0.778 rows=1) (actual time=0.0382..0.0418 rows=4 loops=1)\n    -> Filter: (productos.socio_id = 3)  (cost=0.778 rows=1) (actual time=0.0374..0.0407 rows=4 loops=1)\n        -> Index scan on productos using idx_producto_nombre  (cost=0.778 rows=10) (actual time=0.022..0.0369 rows=36 loops=1)\n"
+            ],
+            "mediana_ms": 0.6655
+        },
+        "socio_con_indice": {
+            "sql": "SELECT id,nombre FROM productos WHERE socio_id=3 ORDER BY nombre,id LIMIT 10",
+            "explain": [
+                {
+                    "id": 1,
+                    "select_type": "SIMPLE",
+                    "table": "productos",
+                    "partitions": null,
+                    "type": "ref",
+                    "possible_keys": "idx_producto_socio_nombre",
+                    "key": "idx_producto_socio_nombre",
+                    "key_len": "4",
+                    "ref": "const",
+                    "rows": 4,
+                    "filtered": 100,
+                    "Extra": "Using index"
+                }
+            ],
+            "analyze": [
+                "-> Limit: 10 row(s)  (cost=0.68 rows=4) (actual time=0.00669..0.00874 rows=4 loops=1)\n    -> Covering index lookup on productos using idx_producto_socio_nombre (socio_id=3)  (cost=0.68 rows=4) (actual time=0.00624..0.00803 rows=4 loops=1)\n"
+            ],
+            "mediana_ms": 0.7093
+        },
+        "pagina_offset": {
+            "sql": "SELECT id,nombre FROM productos ORDER BY id LIMIT 10 OFFSET 20",
+            "explain": [
+                {
+                    "id": 1,
+                    "select_type": "SIMPLE",
+                    "table": "productos",
+                    "partitions": null,
+                    "type": "index",
+                    "possible_keys": null,
+                    "key": "PRIMARY",
+                    "key_len": "4",
+                    "ref": null,
+                    "rows": 30,
+                    "filtered": 100,
+                    "Extra": null
+                }
+            ],
+            "analyze": [
+                "-> Limit\/Offset: 10\/20 row(s)  (cost=2.71 rows=10) (actual time=0.0149..0.0177 rows=10 loops=1)\n    -> Index scan on productos using PRIMARY  (cost=2.71 rows=30) (actual time=0.00851..0.0144 rows=30 loops=1)\n"
+            ],
+            "mediana_ms": 0.7631
+        },
+        "pagina_clave": {
+            "sql": "SELECT id,nombre FROM productos WHERE id>20 ORDER BY id LIMIT 10",
+            "explain": [
+                {
+                    "id": 1,
+                    "select_type": "SIMPLE",
+                    "table": "productos",
+                    "partitions": null,
+                    "type": "range",
+                    "possible_keys": "PRIMARY,idx_producto_nombre,idx_producto_categoria_nombre,idx_producto_socio_nombre",
+                    "key": "PRIMARY",
+                    "key_len": "4",
+                    "ref": null,
+                    "rows": 16,
+                    "filtered": 100,
+                    "Extra": "Using where"
+                }
+            ],
+            "analyze": [
+                "-> Limit: 10 row(s)  (cost=3.47 rows=10) (actual time=0.0444..0.0476 rows=10 loops=1)\n    -> Filter: (productos.id > 20)  (cost=3.47 rows=16) (actual time=0.0435..0.0459 rows=10 loops=1)\n        -> Index range scan on productos using PRIMARY over (20 < id)  (cost=3.47 rows=16) (actual time=0.00759..0.00931 rows=10 loops=1)\n"
+            ],
+            "mediana_ms": 0.8207
+        }
+    }
+}

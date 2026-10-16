@@ -1,0 +1,23 @@
+erDiagram
+    CATEGORIAS ||--o{ PRODUCTOS : clasifica
+    SOCIOS ||--o{ PRODUCTOS : produce
+    CATEGORIAS {
+        int id PK
+        varchar nombre UK
+        varchar descripcion
+    }
+    SOCIOS {
+        int id PK
+        varchar nombre
+        varchar comunidad
+        varchar telefono "nullable"
+    }
+    PRODUCTOS {
+        int id PK
+        varchar codigo UK
+        varchar nombre
+        int categoria_id FK
+        decimal precio "DECIMAL(10,2)"
+        int stock
+        int socio_id FK
+    }

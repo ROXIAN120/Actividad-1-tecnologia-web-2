@@ -1,0 +1,49 @@
+[OK] PDO nativo y base MySQL 8.4
+[OK] Tres categorías normalizadas
+[OK] Datos iniciales coherentes: 36 productos y 8 socios
+[OK] Página 4 contiene seis productos
+[OK] Filtro Cera y vela encuentra dos
+[OK] Orden precio descendente
+[OK] Página grande se ajusta a última
+[OK] Inyección SQL en productos no altera consulta
+[OK] Comodín porcentaje literal
+[OK] Comilla sola se consulta sin error
+[OK] Inyección SQL en socios no altera consulta
+[OK] Paginación por clave no repite ID
+[OK] Crear socio con repositorio
+[OK] Actualizar socio y teléfono nullable
+[OK] Socio inválido responde 422
+[OK] Socios paginados: página 2 con fixtures
+[OK] Crear producto: decimal normalizado y relaciones
+[OK] Código repetido traduce 1062 a 409
+[OK] Actualizar producto solo afecta su código
+[OK] Socio asociado: eliminación responde 409
+[OK] Producto inválido responde 422
+[OK] PDO FK impide relación inexistente
+[OK] PDO CHECK impide precio negativo
+[OK] Migración JSON: simulación revierte cambios
+[OK] Migración JSON: inserción confirmada
+[OK] Migración JSON idempotente sin sobrescribir
+[OK] Token CSRF generado
+[OK] POST sin token rechazado 403
+[OK] GET no elimina y responde 405
+[OK] Ruta inexistente responde 404
+[OK] Página no numérica vuelve a 1
+[OK] Orden SQL desconocido no ejecuta instrucciones
+[OK] XSS reflejado escapado en búsqueda
+[OK] Alta HTTP socio usa PRG 303
+[OK] XSS almacenado se muestra como texto
+[OK] Editar socio HTTP responde 303
+[OK] Validación HTTP socio conserva entrada escapada
+[OK] Validación HTTP producto responde 422
+[OK] Crear producto HTTP 303
+[OK] Editar producto HTTP 303
+[OK] Eliminar producto HTTP 303
+[OK] Eliminar socio HTTP 303
+[OK] Cabeceras CSP y nosniff
+[OK] Configuración privada no accesible por HTTP
+[OK] Clave ID disponible por HTTP
+[OK] Eliminar producto en repositorio
+[OK] Eliminar inexistente responde 404
+[OK] Fixtures limpiados sin restaurar tablas
+Resultado: 48 de 48 comprobaciones

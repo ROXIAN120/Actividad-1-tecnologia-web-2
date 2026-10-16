@@ -1,0 +1,8 @@
+{
+    "leidos": 6,
+    "creados": 0,
+    "omitidos": 6,
+    "socios_nuevos": 0,
+    "aplicado": false
+}
+Simulación: se revirtieron los cambios. Usa --aplicar para confirmar.

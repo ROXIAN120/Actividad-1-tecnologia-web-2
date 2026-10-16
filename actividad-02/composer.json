@@ -1,0 +1,7 @@
+{
+  "name": "html/actividad-02",
+  "description": "Catálogo MySQL de productos y socios",
+  "require": {"php": ">=8.3", "ext-pdo": "*", "ext-pdo_mysql": "*", "ext-mbstring": "*", "ext-curl": "*"},
+  "autoload": {"psr-4": {"App\\": "src/"}},
+  "scripts": {"verificar": "php pruebas/verificar.php"}
+}
