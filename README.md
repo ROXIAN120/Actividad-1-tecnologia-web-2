@@ -5,7 +5,19 @@
 
 Repositorio: <https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2>
 
-## Aplicación final integrada
+## Actividad 02: De JSON a MySQL
+
+La entrega final está en [`actividad-02/`](actividad-02), independiente del catálogo JSON y de los laboratorios históricos. Incluye CRUD de productos y socios, tabla de categorías, PDO preparado, validación, paginación numerada y por clave, importación JSON y configuración privada. Verificación final: **48/48** comprobaciones.
+
+- [Informe final APA 7 con explicación de código y capturas](actividad-02/documentos/Informe_Final_Actividad_02.pdf)
+- [Presentación de defensa](actividad-02/documentos/Presentacion_Final_Actividad_02.pptx)
+- [Bitácora de IA consolidada](actividad-02/BITACORA_IA.md)
+- [Guía de ejecución](actividad-02/README.md) y [guion de defensa](actividad-02/GUIA_DEFENSA.md)
+- [Mediciones EXPLAIN](actividad-02/evidencias/EXPLAIN_MEDICIONES.json)
+
+La aplicación final usa MySQL en 3309 y PHP en 8020. No publicar `.env`; generar las claves localmente con `php configurar.php`. La defensa oral y el envío al aula siguen a cargo del participante.
+
+## Actividad 01: catálogo JSON integrado
 
 La rama `main` contiene la aplicación final con las clases `Producto`, `Categoria` y `Catalogo`, formularios validados, fotografías seguras y persistencia JSON.
 
