@@ -10,7 +10,7 @@ Repositorio: <https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2>
 La entrega final está en [`actividad-02/`](actividad-02), independiente del catálogo JSON y de los laboratorios históricos. Incluye CRUD de productos y socios, tabla de categorías, PDO preparado, validación, paginación numerada y por clave, importación JSON y configuración privada. Verificación final: **48/48** comprobaciones.
 
 - [Informe final APA 7 con explicación de código y capturas](actividad-02/documentos/Informe_Final_Actividad_02.pdf)
-- [Presentación de defensa](actividad-02/documentos/Presentacion_Final_Actividad_02.pptx)
+- [Presentación explicativa para la defensa](actividad-02/documentos/Presentacion_Explicativa_Actividad_02.pptx) — versión ampliada con 28 diapositivas y notas del expositor.
 - [Bitácora de IA consolidada](actividad-02/BITACORA_IA.md)
 - [Guía de ejecución](actividad-02/README.md) y [guion de defensa](actividad-02/GUIA_DEFENSA.md)
 - [Mediciones EXPLAIN](actividad-02/evidencias/EXPLAIN_MEDICIONES.json)

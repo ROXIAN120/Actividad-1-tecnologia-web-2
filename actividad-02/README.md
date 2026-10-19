@@ -36,7 +36,7 @@ Los scripts SQL se ejecutan automáticamente al inicializar el volumen vacío de
 
 ## Organización
 
-`public/`: único directorio público; `config/`: carga de configuración; `src/`: conexión, repositorios, validación e importación; `plantillas/`: vistas escapadas; `sql/`: esquema y semilla; `pruebas/`: verificación y mediciones; `evidencias/`: resultados y capturas; `documentos/`: informe final y presentación. La guía de defensa está en GUIA_DEFENSA.md.
+`public/`: único directorio público; `config/`: carga de configuración; `src/`: conexión, repositorios, validación e importación; `plantillas/`: vistas escapadas; `sql/`: esquema y semilla; `pruebas/`: verificación y mediciones; `evidencias/`: resultados y capturas; `documentos/`: informe final y la presentación explicativa para la defensa. La guía de defensa está en GUIA_DEFENSA.md.
 
 Esta aplicación es educativa y local, sin autenticación ni autorización por roles. No debe exponerse a Internet como sistema productivo. Los laboratorios históricos se conservan como ejercicios; sus ejemplos educativos no son las credenciales aleatorias de esta entrega. No se afirma que todo el historial Git esté libre de ejemplos de claves.
 
