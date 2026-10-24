@@ -1,4 +1,4 @@
-# Tecnología Web II — Laboratorios 1 al 9
+# Tecnología Web II — Laboratorios 1 al 11
 
 **Grupo:** HTML<br>
 **Integrante:** Rodrigo Ledezma Sanchez
@@ -50,8 +50,18 @@ Los nueve proyectos están disponibles juntos en [`laboratorios/`](laboratorios)
 | 7 | [laboratorio-7](laboratorios/laboratorio-7) | Router, excepciones y plantillas | 15/15 | 8007 |
 | 8 | [laboratorio-8](laboratorios/laboratorio-8) | MySQL y PDO seguro | 15/15 | 8008 |
 | 9 | [laboratorio-9](laboratorios/laboratorio-9) | Repositorios y paginación | 14/14 | 8009 |
+| 10 | [laboratorio-10 (rama)](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-10/laboratorios/laboratorio-10) | Seguridad, sesiones y autorización | 15/15 | 8010 |
+| 11 | [laboratorio-11 (rama)](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-11/laboratorios/laboratorio-11) | Transacciones, reportes y CSV seguro | 15/15 | 8011 |
 
 Los resultados corresponden a verificaciones previas y capturas reales; no se restauran las bases automáticamente al descargar. El código de los verificadores oficiales se conserva sin modificaciones.
+
+## Actividad 03
+
+Las ramas nuevas incluyen los laboratorios finales y sus entregables:
+
+- [`laboratorio-10`](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-10): autenticación, sesiones, CSRF y control de acceso por roles.
+- [`laboratorio-11`](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-11): ventas y acopios transaccionales, reportes y CSV seguro.
+- [Informe APA 7 y presentación](https://github.com/ROXIAN120/Actividad-1-tecnologia-web-2/tree/laboratorio-11/actividad-03/documentos) en la rama `laboratorio-11`.
 
 ### Ejecutar una carpeta
 
